@@ -79,6 +79,7 @@ body{
 }
 .bg1{
   width: 100%;
+  height: auto;
 }
 header{
     background: rgba(0, 0, 0, 0.63);
@@ -94,7 +95,7 @@ header{
     font-weight: 700;
     color: white;
     margin: 0 auto;
-    
+    flex-wrap: wrap;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -166,7 +167,7 @@ button{
 }
 .scroll {
     position: relative;
-    overflow-x: auto;
+    
     overflow-y: hidden;
     width: 100%;
     white-space: nowrap;
@@ -210,6 +211,8 @@ button{
 .book_text{
   font-size: 36px;
   font-weight: 700;
+  max-width: 99%;
+  max-height: 100%;
 }
 .container a:active, .container a:hover, .container a{
   text-decoration: none;
@@ -235,6 +238,66 @@ button{
   }
 }
 
-@media only screen and (max-width: 830px){
-  
+@media only screen and (max-width: 930px){
+  .section2{
+    max-height: none;
+  }
+  .section3{
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 715px){
+  .container{
+    flex-direction: column;
+    height: 150px;
+  }
+  .logo{
+    display: block;
+  }
+}
+@media only screen and (max-width: 400px){
+  .container{
+    flex-direction: column;
+    height: 250px;
+  }
+  .logo{
+    height: 50px;
+    width: auto;
+  }
+}
+@media only screen and (max-width: 514px){
+  .katya{
+    width: 80%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 340px){
+  .text h1{
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .text p{
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+@media only screen and (max-width: 700px){
+  .book_text{
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 650px){
+  .header_book{
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 340px){
+  .book_text{
+    font-size: 20px;
+  }
+  .header_book{
+    text-align: center;
+    font-size: 22px;
+  }
 }

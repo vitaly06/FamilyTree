@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Walter+Turncoat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Walter+Turncoat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Walter+Turncoat&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -73,231 +76,509 @@
   }
   /*__________________________*/
 body{
-    background: url("../imgs/all_bg.png") repeat;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+    background-image: url("../imgs/background.png");
 }
-.bg1{
-  width: 100%;
-  height: auto;
+.imgs1{
+    display: none;
 }
-header{
-    background: rgba(0, 0, 0, 0.63);
-    
-    max-width: 100vw;
-    width: 100%;
+.all{
+    margin: 5% 5%;
+    -webkit-box-shadow: -6px 6px 14px 6px rgba(34, 60, 80, 0.24);
+    -moz-box-shadow: -6px 6px 14px 6px rgba(34, 60, 80, 0.24);
+    box-shadow: -6px 6px 14px 6px rgba(34, 60, 80, 0.24);
 }
-.section1{
-  width: 100%;
-}
-.container{
-    font-size: 24px;
-    font-weight: 700;
-    color: white;
-    margin: 0 auto;
-    flex-wrap: wrap;
+/* Шапка сайта */
+.header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 80px;  
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    font-size: 20px;
+    
 }
 .logo{
-    height: 90%;
-    width: auto;
+    width: 4%;
+    height: auto;
+}
+.hr1{
+    border: 0;
+    clear:both;
+    display:block;
+    width: 15%;               
+    background-color: gray;
+    height: 1px;
+}
+.questions{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.call{
+    font-size: 13px;
+}
+.number{
+    font-size: 20px;
+    font-weight: 700;
+}
+/* 1 блок */
+.main1{
+    margin-top: 60px;
+    padding: 0 3%;
+}
+.section{
+    display: flex;
+    
+}
+.text_block1{
+    margin: 5% 0;
+    max-width: 30%;
+}
+.tour_operator{
+    font-family: "DM Sans", sans-serif;
+    font-size: 24px;
+}
+.hr2{
+    margin: 10px 0 15px 0;
+    border: 0;
+    clear:both;
+    display:block;
+    width: 15%;               
+    background: linear-gradient(to right, #A591FB, #FFFFFF);;
+    height: 2px;
+}
+.tvy_header{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+}
+.text_block_text{
+    margin-top: 20px;
+    font-size: 23px;
+    font-family: "DM Sans", sans-serif;
 }
 
-
+/* 2 блок */
+.main2{
+    margin-top: 100px;
+    padding: 0 3%;
+}
 .section2{
-    
+    display: flex;
+    gap: 40px;
+    justify-content: space-evenly;
+}
+.section2_about{
+    font-family: "DM Sans", sans-serif;
+    font-size: 24px;
+}
+.section2_header{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+}
+.section2_text_p{
+    margin-top: 20px;
+    font-size: 23px;
+    font-family: "DM Sans", sans-serif;
+}
+.hr3{
+    margin: 10px 0 15px 0;
+    border: 0;
+    clear:both;
+    display:block;
+    width: 15%;               
+    background: linear-gradient(to right, #A591FB, #FFFFFF);;
+    height: 2px;
+}
+
+/* Туры */ 
+.tours_name{
+    font-family: "DM Sans", sans-serif;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* spb */
+.main3{
+    padding: 0 3%;
+    text-align: center;
+}
+.spb_header{
+    font-size: 64px;
+    font-weight: 700;
+    font-family: "Ubuntu", sans-serif;
+}
+.date_spb{
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    margin: 18px 0;
+}
+.spb_imgs{
     display: flex;
     justify-content: space-around;
-    font-size: 26px;
-    /*border: black 1px solid;*/
+}
+.download_pdf{
+    font-size: 20px;
+    margin: 70px 0;
+    font-family: "DM Sans", sans-serif;
     font-weight: 700;
-    max-height: 600px;
-    margin: 0 auto;
-    width: 90%;
+    width: 280px;
+    height: 60px;
+    color: white;
+    background-color: #A591FB;
+    border-radius: 15px;
 }
-.text{
-  max-height: 600px;
-    width: 40%;
-    line-height: 1.5;
-    margin: auto 0;
-    overflow-y: auto;
+.download_pdf::after{
+    content: '';
+    display: inline-block;
+    background-image: url("../imgs/arrow.png");
+    margin-left: 10px;
+    width: 21px;
+    height: 15px;
+    margin: auto 10px;
 }
 
+/* orenburg */ 
+/* spb */
+.main4{
+    padding: 0 3%;
+    text-align: center;
+}
+.orenburg_header{
+    font-size: 64px;
+    font-weight: 700;
+    font-family: "Ubuntu", sans-serif;
+}
+.date_orenburg{
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    margin: 18px 0;
+}
+.orenburg_imgs{
+    display: flex;
+    justify-content: space-around;
+}
+.download_pdf{
+    font-size: 20px;
+    margin: 70px 0;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    width: 280px;
+    height: 60px;
+    color: white;
+    background-color: #A591FB;
+    border-radius: 15px;
+}
+.download_pdf::after{
+    content: '';
+    display: inline-block;
+    background-image: url("../imgs/arrow.png");
+    margin-left: 10px;
+    width: 21px;
+    height: 15px;
+    margin: auto 10px;
+}
 
-.section3{
-    margin-top: 30px;
-    width: 100%;
+/* footer */ 
+.main5{
+    margin-top: 100px;
+    padding: 0 3%;
+    font-family: "DM Sans", sans-serif;
+    margin-bottom: 70px;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.socials{
+    display: flex;
+    gap: 25px;
+}
+.footer_logo_img{
+    width: 5%;
     height: auto;
 }
-.download:active, .download:hover, .download{
-  text-decoration: none;
-  color: white;
+.footer_p{
+    font-size: 18px;
 }
-.download{
-  font-size: 36px;
+.footer_number{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
 }
-
-.download_div{
-  text-align: center;
-  
-  margin: 100px auto 70px auto;
-}
-button{
-  width: 300px;
-  background-color: #000;
-  border-radius: 15px;
-
-}
-.header_tree{
-    color: black;
-    text-transform: uppercase;
-    font-size: 36px;
-    font-weight: 700;
-    text-align: center;
-    
-}
-.header_tree::before{
-    content: url("../imgs/tree.png");
-    display: inline-block;
-    vertical-align: middle;
-    transform: scale(0.7);
-}
-.scroll {
-    position: relative;
-    
-    overflow-y: hidden;
-    width: 100%;
-    white-space: nowrap;
-}
-.header_family{
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    margin-top: 30px;
+.tm{
+    margin-top: 50px;
+    font-size: 16px;
     margin-bottom: 30px;
 }
-.block {
-    position: relative;
+/* font-family: "Montserrat", sans-serif; */
+a:active, /* активная/посещенная ссылка */
+a:hover,  /* при наведении */
+a{
+  text-decoration: none;
+  color: black;
 }
-#myimage{
-    height: auto;
-    width: 100%;
-}
-  
-
-.section4{
-    margin-top: 150px;
-    width: 100%;
-    padding-left: 8%;
-    padding-right: 8%;
-    padding-bottom: 100px;
-}
-.header_book{
-    color: black;
-    text-transform: uppercase;
-    font-size: 36px;
-    font-weight: 700;
-    
-}
-.header_book::before{
-    content: url("../imgs/book.png");
-    display: inline-block;
-    vertical-align: middle;
-    transform: scale(0.7);
-}
-.book_text{
-  font-size: 36px;
-  font-weight: 700;
-  max-width: 99%;
-  max-height: 100%;
-}
-.container a:active, .container a:hover, .container a{
+.download_a:active, /* активная/посещенная ссылка */
+.download_a:hover,  /* при наведении */
+.download_a{
   text-decoration: none;
   color: white;
 }
 
-@media only screen and (max-width: 1000px){
-  .section2{
-    display: block;
+.spb_imgs, .orenburg_imgs{
+    flex-wrap: wrap; 
 }
-  .img{
-    text-align: center;
-  }
-  .text{
-    text-align: center;
-    width: 100%;
-    margin-top: 50px;
-    overflow-y: visible;
-    max-height: none;
-  }
-  .section3{
-    margin-top: 550px;
-  }
+.spb1, .spb2, .spb3, .orb1, .orb2, .orb3{
+    margin-bottom: 20px;
 }
 
-@media only screen and (max-width: 930px){
-  .section2{
-    max-height: none;
-  }
-  .section3{
-    margin-top: 0px;
-  }
+@media only screen and (max-width: 1545px){
+    .section1_img{
+        width: 90%;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 1260px){
+    .section{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .text_block1{
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .hr2{
+        margin: 0 auto;
+    }
+    .hr3{
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 1155px){
+    .section{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .text_block1{
+        max-width: 70%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 30px;
+    }
 }
 
-@media only screen and (max-width: 715px){
-  .container{
-    flex-direction: column;
-    height: 150px;
-  }
-  .logo{
-    display: block;
-  }
-}
-@media only screen and (max-width: 400px){
-  .container{
-    flex-direction: column;
-    height: 250px;
-  }
-  .logo{
-    height: 50px;
-    width: auto;
-  }
-}
-@media only screen and (max-width: 514px){
-  .katya{
-    width: 80%;
-    height: auto;
-  }
-}
-@media only screen and (max-width: 340px){
-  .text h1{
-    font-size: 20px;
-    font-weight: 700;
-  }
-  .text p{
-    font-size: 18px;
-    font-weight: 700;
-  }
-}
 @media only screen and (max-width: 700px){
-  .book_text{
-    font-size: 25px;
-  }
+    .header{
+        font-size: 13px;
+    }
+    .logo{
+        width: 7%;
+    }
+    .call{
+        font-size: 10px;
+    }
+    .number{
+        font-size: 15px;
+    }
+    /* 1 блок */
+    .tvy_header{
+        margin-top: 30px;
+        font-size: 32px;
+    }
+    .text_block_text{
+        font-size: 18px;
+    }
+    /* 2 block */
+    .section2_header{
+        font-size: 32px;
+    }
+    .section2_text_p{
+        font-size: 18px;
+    }
+    
+    .spb_header{
+        margin-top: 20px;
+        font-size: 32px;
+    }
+    .date_spb{
+        font-size: 16px;
+    }
+    
+    /* orenburg */ 
+    .orenburg_header{
+        font-size: 32px;
+    }
+    .date_orenburg{
+        font-size: 16px;
+    }
+    
+    /* footer */ 
+    .main5{
+        margin-top: 100px;
+        padding: 0 3%;
+        font-family: "DM Sans", sans-serif;
+        margin-bottom: 70px;
+    }
 }
-@media only screen and (max-width: 650px){
-  .header_book{
-    text-align: center;
-  }
+
+/* 2 block */
+@media only screen and (max-width: 1100px){
+    .section2{
+        flex-wrap: wrap;
+        text-align: center;
+        margin-bottom: 50px;
+    }
 }
-@media only screen and (max-width: 340px){
-  .book_text{
-    font-size: 20px;
-  }
-  .header_book{
-    text-align: center;
-    font-size: 22px;
-  }
+
+@media only screen and (max-width: 700px){
+    .imgs1{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .section{
+        display: block;
+    }
+    .section1_img{
+        display: none;
+    }
+    .imgs1_p, .imgs2_p, .imgs3_p{
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        margin: 30px auto;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 700;
+        width: 150px;
+        height: 70px;
+        border-radius: 15px;
+        -webkit-box-shadow: -6px 6px 14px 6px rgba(34, 60, 80, 0.24);
+        -moz-box-shadow: -6px 6px 14px 6px rgba(34, 60, 80, 0.24);
+        box-shadow: -6px 6px 14px 6px rgba(34, 60, 80, 0.24);
+    }
+    .div1, .div2, .div3{
+        vertical-align: middle;
+    }
+}
+
+@media only screen and (max-width: 510px){
+    .spb1, .spb2, .spb3, .orb1, .orb2, .orb3{
+        max-width: 95%;
+    }
+    .footer_logo_img{
+        width: 10%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .header{
+        font-size: 10px;
+    }
+    .logo{
+        width: 7%;
+    }
+    .call{
+        font-size: 10px;
+    }
+    .number{
+        font-size: 13px;
+    }
+    .section2_fly{
+        max-width: 80%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .section2_fly{
+        max-width: 80%;
+    }
+    .header{
+        flex-direction: column;
+        gap: 30px;
+        font-size: 14px;
+    }
+    .hr1{
+        display: none;
+    }
+    .logo{
+        width: 10%;
+    }
+    .call{
+        font-size: 13px;
+    }
+    .number{
+        font-size: 15px;
+    }
+    /* 1 блок */
+    .tour_operator{
+        font-size: 15px;
+    }
+    .tvy_header{
+        margin-top: 30px;
+        font-size: 24px;
+    }
+    .text_block_text{
+        font-size: 14px;
+    }
+    .img1, .img2, .img3{
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    /* 2 block */
+    .section2_header{
+        font-size: 24px;
+    }
+    .section2_about{
+        font-size: 15px;
+    }
+    .section2_text_p{
+        font-size: 14px;
+    }
+    
+    .spb_header{
+        margin-top: 20px;
+        font-size: 24px;
+    }
+    .date_spb{
+        font-size: 16px;
+    }
+    
+    /* orenburg */ 
+    .orenburg_header{
+        font-size: 32px;
+    }
+    .date_orenburg{
+        font-size: 16px;
+    }
+    
+    /* footer */ 
+    .main5{
+        margin-top: 100px;
+        padding: 0 3%;
+        font-family: "DM Sans", sans-serif;
+        margin-bottom: 70px;
+    }
+}
+
+@media only screen and (max-width: 365px){
+    .download_pdf{
+        font-size: 14px;
+        margin: 70px 0;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 700;
+        width: 150px;
+        height: 35px;
+        color: white;
+        background-color: #A591FB;
+        border-radius: 15px;
+    }
+    .download_pdf::after{
+        content: '';
+    }
 }
